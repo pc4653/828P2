@@ -83,3 +83,189 @@ average silhoutte width for all is:
 The first signature gets recovered exactly, but not the rest, why? 
 
 
+10/26/17
+
+Progress:
+
+Adjusted the VAE structure to use ReLu as the output activation, and discarded normalizing data to (0,1); use MSE instead of BCE as loss function. Results significantly better: 
+
+
+
+loading trial5
+
+eliminating categories: 
+
+[0, 1, 2, 3, 5, 7, 8, 10, 12, 15, 16, 17, 18, 19, 22, 25]
+
+completed in 76.3571209908seconds.
+
+the average Frobenius reconstruction error is: 
+
+93.1936229075
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+28.8218693684
+
+the average silhoutte width for each cluster is:
+
+[0.99358637123586324, 0.99986549987679763, 0.97224522168892225, 0.99906020406738838, 0.99177668641782157]
+
+average silhoutte width for all is: 
+
+0.991306796657
+
+0 signature has the highest similarity with 1 signatures with 0.996495409317
+
+1 signature has the highest similarity with 3 signatures with 0.982332194155
+
+2 signature has the highest similarity with 4 signatures with 0.938770560997
+
+3 signature has the highest similarity with 2 signatures with 0.889885039796
+
+4 signature has the highest similarity with 0 signatures with 0.970037641829
+
+loading trial6
+
+eliminating categories: 
+
+[0, 1, 2, 3, 5, 7, 8, 10, 12, 15, 16, 17, 18, 19, 22, 25]
+
+completed in 77.1132860184seconds.
+
+the average Frobenius reconstruction error is: 
+
+93.1494199704
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+27.7542537708
+
+the average silhoutte width for each cluster is:
+
+[0.99088208973591541, 0.99986423269803337, 0.99891561071207435, 0.99345008606344309, 0.97417776494092223]
+
+average silhoutte width for all is: 
+
+0.99145795683
+
+0 signature has the highest similarity with 1 signatures with 0.996563357995
+
+1 signature has the highest similarity with 2 signatures with 0.983287405655
+
+2 signature has the highest similarity with 0 signatures with 0.934483656216
+
+3 signature has the highest similarity with 4 signatures with 0.885670381439
+
+4 signature has the highest similarity with 3 signatures with 0.967717413551
+
+loading trial7
+
+eliminating categories: 
+
+[0, 1, 2, 3, 5, 7, 8, 10, 12, 15, 16, 17, 18, 19, 22, 25]
+
+completed in 77.3325209618seconds.
+
+the average Frobenius reconstruction error is: 
+
+95.6895897243
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+29.0813072572
+
+the average silhoutte width for each cluster is:
+
+[0.99876252231285578, 0.98912497063350469, 0.9998496604514967, 0.97216836523485928, 0.99281361284712266]
+
+average silhoutte width for all is: 
+
+0.990543826296
+
+0 signature has the highest similarity with 2 signatures with 0.996403704778
+
+1 signature has the highest similarity with 0 signatures with 0.982918340407
+
+2 signature has the highest similarity with 1 signatures with 0.93260345711
+
+3 signature has the highest similarity with 3 signatures with 0.889215443288
+
+4 signature has the highest similarity with 4 signatures with 0.967950686156
+
+
+**interesting observation, bootstrapping actually seems to be making a difference - not sure why, maybe the generated signatures are too close together?
+
+**here is results without bootstrap used, can see that some of the signatures are not seperated, although the overall cos similairty is still relatively high
+
+loading trial4
+
+eliminating categories: 
+
+[ 0 12  7 25  8  2 18 17  3 22 19 15  5 16 10  1]
+
+completed in 94.978374958seconds.
+
+the average Frobenius reconstruction error is: 
+
+24.9665067229
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+24.5598110763
+
+the average silhoutte width for each cluster is:
+
+[0.99820912368538284, 0.99589283583106181, 0.9666613359499524, 0.93905834339004868, 0.91086467659416137]
+
+average silhoutte width for all is: 
+
+0.96213726309
+
+0 signature has the highest similarity with 0 signatures with 0.997199036847
+
+1 signature has the highest similarity with 1 signatures with 0.929217521427
+
+2 signature has the highest similarity with 3 signatures with 0.913586148252
+
+3 signature has the highest similarity with 1 signatures with 0.93963581449
+
+4 signature has the highest similarity with 2 signatures with 0.85521383294
+
+loading trial5
+
+eliminating categories: 
+
+[ 0 18 22  7 16  2 25  3 12 15 19  8 17  5 10  1]
+
+completed in 94.5966670513seconds.
+
+the average Frobenius reconstruction error is: 
+
+25.9204855938
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+25.6733155694
+
+the average silhoutte width for each cluster is:
+
+[0.99575377552995503, 0.93759133125873895, 0.99820779076242694, 0.96841685335593208, 0.9163495487733827]
+
+average silhoutte width for all is: 
+
+0.963263859936
+
+0 signature has the highest similarity with 2 signatures with 0.997020846538
+
+1 signature has the highest similarity with 0 signatures with 0.928453280473
+
+2 signature has the highest similarity with 1 signatures with 0.908710360713
+
+3 signature has the highest similarity with 0 signatures with 0.939580598993
+
+4 signature has the highest similarity with 3 signatures with 0.863728100932
+
+
+
+
