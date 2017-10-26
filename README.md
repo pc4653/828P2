@@ -267,5 +267,40 @@ average silhoutte width for all is:
 4 signature has the highest similarity with 3 signatures with 0.863728100932
 
 
+**results from running on original data, with the same data size
+
+loading trial0
+
+eliminating categories: 
+
+[0, 2, 3, 8, 12, 18]
+
+completed in 150.119699955seconds.
+
+the average Frobenius reconstruction error is: 
+
+389.595884234
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+277.120902096
+
+the average silhoutte width for each cluster is:
+
+[0.99928324887360109, 0.98220648040693792, 0.99970417960330649, 0.99962217607270742, 0.99942960264402647]
+
+average silhoutte width for all is: 
+
+0.99604913752
+
+0 signature has the highest similarity with 2 signatures with 0.999366231423
+
+1 signature has the highest similarity with 4 signatures with 0.99867606782
+
+2 signature has the highest similarity with 0 signatures with 0.998940692117
+
+3 signature has the highest similarity with 1 signatures with 0.967777658719
+
+4 signature has the highest similarity with 3 signatures with 0.999391536424
 
 
