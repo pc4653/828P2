@@ -20,7 +20,7 @@ this picture explains variantional autoencoder pretty well:
 
 ![Alt text](vae.4.png?raw=true "Optional Title")
 
-The idea is that, to make an autoencoder a generative process - and not just a decoder recovering from a encoded, existing data, which is what autoencoder does - we try to force the encoded message z to have a certain distribution - gaussian in this implementation - and instead of giving the decoder the encoded message, we can sample from the distribution and feed the generated result to the decoder. After training the decoder should be able to capture the hidden processes that give rise to true data and generate data that's realistic - in the sense that it follows the hidden processes. 
+The idea is that, to make an autoencoder a generative process - and not just a decoder recovering from a encoded, existing data, which is what autoencoder does - we try to force the encoded message z to have a certain distribution - gaussian in this implementation - and instead of giving the decoder the encoded message, we can sample from the distribution and feed the generated result to the decoder. After training the decoder should be able to capture the hidden processes that give rise to true data and generate data that's realistic - in the sense that it follows the hidden processes, but also different from input data/not pure memorization but capture of semantic properties. 
 
 10/26/17
 
