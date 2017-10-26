@@ -314,7 +314,11 @@ signatures comparison, per usual
 
 ![Alt text](10000_sig_extract_comp.jpg?raw=true "Optional Title")
 
-observation: mostly still have good result, consider the sample size is a lot smaller, specifically one of the signature was not found. Can look into the possibility of why.
+observation: 
+
+Mostly still have good result, consider the sample size is a lot smaller, specifically one of the signature was not found. Can look into the possibility of why.
+
+Even when a signature is not matched, the overall cluster compactness is still not changed - probably means that the decoder uses some other process to generate data, which is found in NMF
 
 
 10/25/17
