@@ -5,6 +5,8 @@ TO DO:
 
 Change the set up from wide one FC layer to deep layers;
 
+Change the set up from having the input to be sequence of data (2 dimension) to just data (1 dimension)
+
 Adding dropout to the network;
 
 Generative different sets of signatures to see if similairty between signatures give problem for the network and that if bootstrap actually helps;
