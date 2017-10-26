@@ -12,8 +12,11 @@ input was set to be 28 by 28, assembling 28 sequences of 28 length into the same
 **Note 1. MNIST was normalized to 0 and 1 (sigmoid was used as the output activation) - whether normalizing simulated data to 0 and 1 is questionable - in general most values are closer to 0, probably better to use another scheme
 
 Note 2. Whether treating simulated data as sequences is useful is questionable? At the least didn't expect worse output than before but may be wrong
+
 Note 3. Current encoder and decoder uses one wide fc layer before activation, prob better performance on deeper layer
+
 Note 4. Variantional Autoencoder gives a generative model, probably more sane to simply use autoencoder to make sure the general concept works first.
+
 Note 5. try WGAN later
 
 Results so far:
@@ -21,35 +24,61 @@ Results so far:
 Interestingly engouh, there is some mix result with VAE - here is the log for pipeline running over genereated data:
 
 1st run:
+
 the average Frobenius reconstruction error is: 
+
 65.1315292319
+
 the forbenius reconstruction error for the set of estimated P is: 
+
 16.4943449169
+
 the average silhoutte width for each cluster is:
+
 [0.75799929550017031, 0.99719044244052579, 0.74098777126736559, 0.72619768940514817, 0.71008715858294302]
+
 average silhoutte width for all is: 
+
 0.786492471439
+
 0 signature has the highest similarity with 1 signatures with 0.993470673477
+
 1 signature has the highest similarity with 4 signatures with 0.315196501982
+
 2 signature has the highest similarity with 3 signatures with 0.414266812421
+
 3 signature has the highest similarity with 4 signatures with 0.313893276248
+
 4 signature has the highest similarity with 2 signatures with 0.300356473917
 
-5
-completed in 71.510956049seconds.
+
+
 the average Frobenius reconstruction error is: 
+
 14.8659022096
+
 the forbenius reconstruction error for the set of estimated P is: 
+
 1.73926966441
+
 the average silhoutte width for each cluster is:
+
 [0.53235868874473036, 0.97550448331200457, 0.56557660716190294, 0.62100938952537899, 0.74031928449558515]
+
 average silhoutte width for all is: 
+
 0.686953690648
+
 0 signature has the highest similarity with 1 signatures with 0.991926408006
+
 1 signature has the highest similarity with 0 signatures with 0.345187328837
+
 2 signature has the highest similarity with 3 signatures with 0.50602063159
+
 3 signature has the highest similarity with 2 signatures with 0.308905319654
+
 4 signature has the highest similarity with 2 signatures with 0.331819927354
+
 
 The first signature gets recovered exactly, but not the rest, why? 
 
