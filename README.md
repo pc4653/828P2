@@ -43,7 +43,7 @@ changed the network to deeper layers -
         self.fc9 = nn.Linear(200, 300)
         self.fc10 = nn.Linear(300, 784)
 
-**results after 400 epochs**
+**results after 400 epochs, data size 10000 **
 
 generated data
 
