@@ -26,6 +26,21 @@ The idea is that, to make an autoencoder a generative process - and not just a d
 
 10/27/17
 
+changed the network to deeper layers - 
+
+        self.fc1 = nn.Linear(784, 300)
+        self.fc2 = nn.Linear(300, 200)		
+        self.fc3 = nn.Linear(200, 100)		
+        self.fc4 = nn.Linear(100, 50)	
+        self.fc51 = nn.Linear(50, 20)
+        self.fc52 = nn.Linear(50, 20)
+        self.fc6 = nn.Linear(20, 50)		
+        self.fc7 = nn.Linear(50, 100)
+        self.fc8 = nn.Linear(100, 200)
+        self.fc9 = nn.Linear(200, 300)
+        self.fc10 = nn.Linear(300, 784)
+
+
 **ran 10 epochs**
 
 eliminating categories: 
