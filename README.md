@@ -29,7 +29,6 @@ The idea is that, to make an autoencoder a generative process - and not just a d
 Thoughts on results - training on more and more epochs seem to make the signatures converge better and better - what happens when we try to run on higher/lower order of signatures (presumed K), in Alexandrov's pipeline?
 
 
-
 changed the network to deeper layers - 
 
         self.fc1 = nn.Linear(784, 300)
@@ -43,6 +42,20 @@ changed the network to deeper layers -
         self.fc8 = nn.Linear(100, 200)
         self.fc9 = nn.Linear(200, 300)
         self.fc10 = nn.Linear(300, 784)
+
+**results after 400 epochs**
+
+generated data
+
+![Alt text](10000_gen_data_400.jpg?raw=true "Optional Title")
+
+original data
+
+![Alt text](10000_orig_data.jpg?raw=true "Optional Title")
+
+signatures extracted
+
+![Alt text](10000_sig_extract_comp_400.jpgraw=true "Optional Title")
 
 
 **ran 10 epochs**
