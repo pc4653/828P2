@@ -26,6 +26,10 @@ The idea is that, to make an autoencoder a generative process - and not just a d
 
 10/27/17
 
+Thoughts on results - training on more and more epochs seem to make the signatures converge better and better - what happens when we try to run on higher/lower order of signatures (presumed K), in Alexandrov's pipeline?
+
+
+
 changed the network to deeper layers - 
 
         self.fc1 = nn.Linear(784, 300)
