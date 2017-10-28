@@ -24,6 +24,184 @@ this picture explains variantional autoencoder pretty well:
 
 The idea is that, to make an autoencoder a generative process - and not just a decoder recovering from a encoded, existing data, which is what autoencoder does - we try to force the encoded message z to have a certain distribution - gaussian in this implementation - and instead of giving the decoder the encoded message, we can sample from the distribution and feed the generated result to the decoder. After training the decoder should be able to capture the hidden processes that give rise to true data and generate data that's realistic - in the sense that it follows the hidden processes, but also different from input data/not pure memorization but capture of semantic properties. 
 
+10/27/17
+
+**ran 10 epochs**
+
+eliminating categories: 
+
+[2, 4, 8, 13, 17, 23]
+
+completed in 91.2932219505seconds.
+
+the average Frobenius reconstruction error is: 
+
+250.123151126
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+113.291217854
+
+the average silhoutte width for each cluster is:
+
+[0.97317942519728728, 0.95888833995949341, 0.99324184588029374, 0.96146391912447982, 0.90907985501430033]
+
+average silhoutte width for all is: 
+
+0.959170677035
+
+0 signature has the highest similarity with 2 signatures with 0.914057500834
+
+1 signature has the highest similarity with 0 signatures with 0.400483218069
+
+2 signature has the highest similarity with 0 signatures with 0.648148315138
+
+3 signature has the highest similarity with 1 signatures with 0.745043625485
+
+4 signature has the highest similarity with 4 signatures with 0.75558078918
+
+**epoch of 20**
+
+eliminating categories: 
+
+[2, 8, 13, 17, 23]
+
+completed in 84.2069511414seconds.
+
+the average Frobenius reconstruction error is: 
+
+217.554456989
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+51.9703338518
+
+the average silhoutte width for each cluster is:
+
+[0.9681127423503757, 0.83957639540233464, 0.9926201945643951, 0.96932271398756542, 0.95600790510493383]
+
+average silhoutte width for all is: 
+
+0.945127990282
+
+0 signature has the highest similarity with 2 signatures with 0.966877865327
+
+1 signature has the highest similarity with 1 signatures with 0.573454489115
+
+2 signature has the highest similarity with 1 signatures with 0.675458856412
+
+3 signature has the highest similarity with 4 signatures with 0.954165892304
+
+4 signature has the highest similarity with 1 signatures with 0.620786225848
+
+**epoch of 100**
+
+
+eliminating categories: 
+
+[2, 8, 13, 17, 23]
+
+completed in 84.2080330849seconds.
+
+the average Frobenius reconstruction error is: 
+
+240.570621828
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+62.2400998246
+
+the average silhoutte width for each cluster is:
+
+[0.96033114853392998, 0.99157391376586734, 0.94157361550155116, 0.95633805326259891, 0.96884173678881913]
+
+average silhoutte width for all is: 
+
+0.963731693571
+
+0 signature has the highest similarity with 1 signatures with 0.971470672793
+
+1 signature has the highest similarity with 0 signatures with 0.706407621673
+
+2 signature has the highest similarity with 0 signatures with 0.763335190934
+
+3 signature has the highest similarity with 2 signatures with 0.979331220478
+
+4 signature has the highest similarity with 3 signatures with 0.884240536684
+
+**epoch 200**
+
+
+eliminating categories: 
+
+[2, 8, 13, 17, 23]
+
+completed in 86.8884019852seconds.
+
+the average Frobenius reconstruction error is: 
+
+291.662053621
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+73.4872082156
+
+the average silhoutte width for each cluster is:
+
+[0.95574083607183036, 0.94643915971959958, 0.93522009006001761, 0.98790781718393805, 0.99322479400027242]
+
+average silhoutte width for all is: 
+
+0.963706539407
+
+0 signature has the highest similarity with 3 signatures with 0.977145904952
+
+1 signature has the highest similarity with 2 signatures with 0.816591532644
+
+2 signature has the highest similarity with 2 signatures with 0.717726167306
+
+3 signature has the highest similarity with 4 signatures with 0.984693958855
+
+4 signature has the highest similarity with 0 signatures with 0.946413400914
+
+**epoch 400**
+
+
+eliminating categories: 
+
+[2, 8, 13, 17, 23]
+
+completed in 91.1732280254seconds.
+
+the average Frobenius reconstruction error is: 
+
+351.193654548
+
+the forbenius reconstruction error for the set of estimated P is: 
+
+88.2993497315
+
+the average silhoutte width for each cluster is:
+
+[0.95983745591663772, 0.95311246726479981, 0.9952849974127802, 0.98408598591955587, 0.95501282893050576]
+
+average silhoutte width for all is: 
+
+0.969466747089
+
+0 signature has the highest similarity with 3 signatures with 0.988627238989
+
+1 signature has the highest similarity with 1 signatures with 0.951031220307
+
+2 signature has the highest similarity with 4 signatures with 0.970012829318
+
+3 signature has the highest similarity with 2 signatures with 0.986920186276
+
+4 signature has the highest similarity with 0 signatures with 0.966446345334
+
+
+
+
 10/26/17
 
 Progress:
