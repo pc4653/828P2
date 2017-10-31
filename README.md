@@ -3,15 +3,17 @@
 
 TO DO:
 
-Change the set up from wide one FC layer to deep layers;
+~~Change the set up from wide one FC layer to deep layers;~~ **done**
 
-Change the set up from having the input to be sequence of data (2 dimension) to just data (1 dimension)
+~~Change the set up from having the input to be sequence of data (2 dimension) to just data (1 dimension)~~ **done**
 
-Adding dropout to the network;
+Adding dropout to the network; necessary?
 
 Generative different sets of signatures to see if similairty between signatures give problem for the network and that if bootstrap actually helps;
 
-Investigate the discovered feature/latent space represented by the decoder - does it have the linearity that other space have? if so we can try playing with arthrimatics in feature space - if feature vector of 5 mutations sigs - feature vector of 2 mutation sigs from the 5 = feature vector of 3
+Investigate the discovered feature/latent space represented by the decoder - does it have the linearity that other space have? if so we can try playing with arthrimatics in feature space - if feature vector of 5 mutations sigs - feature vector of 2 mutation sigs from the 5 = feature vector of 3 
+ 
+denosing effect
 
 Investigate Poisson noise resistance of the input data
 
@@ -55,7 +57,7 @@ original data
 
 signatures extracted
 
-![Alt text](10000_sig_extract_comp_400.jpgraw=true "Optional Title")
+![Alt text](10000_sig_extract_comp_400.jpg?raw=true "Optional Title")
 
 
 **ran 10 epochs**
