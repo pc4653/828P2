@@ -26,6 +26,28 @@ this picture explains variantional autoencoder pretty well:
 
 The idea is that, to make an autoencoder a generative process - and not just a decoder recovering from a encoded, existing data, which is what autoencoder does - we try to force the encoded message z to have a certain distribution - gaussian in this implementation - and instead of giving the decoder the encoded message, we can sample from the distribution and feed the generated result to the decoder. After training the decoder should be able to capture the hidden processes that give rise to true data and generate data that's realistic - in the sense that it follows the hidden processes, but also different from input data/not pure memorization but capture of semantic properties. 
 
+11/2/17
+
+trying on biological dataset:
+
+existing program running on CLL dataset, exnome and genome appended (genome at the end); comparing against 30 COSMIC mutational signatures, K = 5, list of the highest cos_sim matching for each extracted signature and their corresponding COSMIC signature:
+
+[[0.94206813080597818, 4], [0.87352351453272581, 7], [0.85608103936427404, 16], [0.83670793486890338, 0], [0.92520002216815989, 8]]
+
+eliminating categories: 
+[2, 6, 26, 30, 50, 54, 74, 78]
+completed in 54.9711399078seconds.
+the average Frobenius reconstruction error is: 
+285.602870906
+the forbenius reconstruction error for the set of estimated P is: 
+216.869202261
+the average silhoutte width for each cluster is:
+[0.92528858222351629, 0.98029434757548839, 0.93919698879810853, 0.91311794141577907, 0.9559143614186858]
+average silhoutte width for all is: 
+0.942762444286
+
+
+
 10/27/17
 
 Thoughts on results - training on more and more epochs seem to make the signatures converge better and better - what happens when we try to run on higher/lower order of signatures (presumed K), in Alexandrov's pipeline?
