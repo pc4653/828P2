@@ -30,7 +30,7 @@ The idea is that, to make an autoencoder a generative process - and not just a d
 
 trying on biological dataset:
 
-existing program running on CLL dataset, exnome and genome appended (genome at the end); comparing against 30 COSMIC mutational signatures, K = 5, list of the highest cos_sim matching for each extracted signature and their corresponding COSMIC signature:
+**existing program running on CLL dataset, genome; comparing against 30 COSMIC mutational signatures, K = 5, list of the highest cos_sim matching for each extracted signature and their corresponding COSMIC signature:**
 
 [[0.94206813080597818, 4], [0.87352351453272581, 7], [0.85608103936427404, 16], [0.83670793486890338, 0], [0.92520002216815989, 8]]
 
@@ -46,7 +46,35 @@ the average silhoutte width for each cluster is:
 average silhoutte width for all is: 
 0.942762444286
 
+verified by running Alexandrov's verision
+[[0.82643526640751763, 0], [0.85699061686149625, 16], [0.95533379746958702, 8], [0.92132072845980695, 4], [0.88829475099483424, 7]]
 
+**running on K = 3**
+my program:
+[[0.9221663904759364, 8], [0.86642080588138959, 4], [0.78141173116810625, 15]]
+Alex's program:
+[[0.88301672842474621, 4], [0.9308140924199525, 8], [0.81143735789793014, 7]]
+
+
+**K = 3, only exomes:**
+[[0.86615684681403948, 4], [0.92160093360522988, 8], [0.78209752802091781, 15]]
+eliminating categories: 
+[6, 26, 30, 50, 54, 69, 74, 78]
+completed in 50.3525850773seconds.
+the average Frobenius reconstruction error is: 
+317.900581079
+the forbenius reconstruction error for the set of estimated P is: 
+247.125600979
+the average silhoutte width for each cluster is:
+[0.99619590010774572, 0.98876095452610013, 0.98765062028567407]
+average silhoutte width for all is: 
+0.990869158307
+
+**K = 3, using both exomes and genomes**
+[[0.86615684681403948, 4], [0.92160093360522988, 8], [0.78209752802091781, 15]]
+
+on Alex's program:
+[[0.98446355941428831, 8], [0.85230442708625886, 0], [0.90165568102368965, 4]]
 
 10/27/17
 
